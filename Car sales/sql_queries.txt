@@ -1,0 +1,94 @@
+# Most expensive car sold in 2021
+
+SELECT make, model, sellingprice, saledate
+FROM car_sales
+WHERE EXTRACT(YEAR FROM saledate) = 2021
+ORDER BY sellingprice DESC
+LIMIT 1;
+
+# Average selling price by card condition
+
+SELECT condition, AVG(sellingprice) AS avg_price
+FROM car_sales
+GROUP BY condition
+ORDER BY avg_price DESC;
+
+# Cars Sold Above Market Value (MMR):
+
+SELECT make, model, mmr, sellingprice, (sellingprice - mmr) AS price_difference
+FROM car_sales
+WHERE sellingprice > mmr
+ORDER BY price_difference DESC;
+
+# Find the car with the highest odometer reading per car make
+
+SELECT make, model, MAX(odometer) AS max_odometer
+FROM car_sales
+GROUP BY make
+ORDER BY max_odometer DESC;
+
+# Calculate the total sales by state
+
+SELECT state, SUM(sellingprice) AS total_sales
+FROM car_sales
+GROUP BY state
+ORDER BY total_sales DESC;
+
+# Identify cars sold below market value (MMR) by more than 10%
+
+SELECT make, model, mmr, sellingprice, ((mmr - sellingprice) / mmr) * 100 AS discount_percentage
+FROM car_sales
+WHERE sellingprice < mmr AND ((mmr - sellingprice) / mmr) * 100 > 10
+ORDER BY discount_percentage DESC;
+
+# Show the trend of average selling price by year
+
+SELECT year, AVG(sellingprice) AS avg_selling_price
+FROM car_sales
+GROUP BY year
+ORDER BY year ASC;
+
+# Find the total number of cars sold by seller
+
+SELECT seller, COUNT(*) AS total_cars_sold
+FROM car_sales
+GROUP BY seller
+ORDER BY total_cars_sold DESC;
+ 
+# List cars sold in the last 6 months
+
+SELECT make, model, saledate, sellingprice
+FROM car_sales
+WHERE saledate >= (CURRENT_DATE - INTERVAL '6 months')
+ORDER BY saledate DESC;
+
+# Calculate the average odometer reading by car condition
+
+SELECT condition, AVG(odometer) AS avg_odometer
+FROM car_sales
+GROUP BY condition
+ORDER BY avg_odometer DESC;
+
+# Find cars sold by a specific seller (e.g., CarMax)
+
+SELECT make, model, sellingprice, saledate
+FROM car_sales
+WHERE seller = 'CarMax'
+ORDER BY saledate DESC;
+
+# Compare the average selling price of automatic vs. manual transmission cars
+
+SELECT transmission, AVG(sellingprice) AS avg_selling_price
+FROM car_sales
+GROUP BY transmission
+ORDER BY avg_selling_price DESC;
+
+# Find the car with the lowest selling price sold in the "SUV" body type
+
+SELECT make, model, sellingprice, body
+FROM car_sales
+WHERE body = 'SUV'
+ORDER BY sellingprice ASC
+LIMIT 1;
+
+
