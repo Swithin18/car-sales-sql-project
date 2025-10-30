@@ -41,19 +41,13 @@ The dashboard visuals were generated using **Julius AI**, an AI-powered analytic
 
 **Key Visuals**
 | Insight | Description |
-|----------|--------------|
-| **Top Brands by Sales** | Toyota, Honda, and Ford led overall volume. |
+|----------|--------------|<img width="2000" height="1200" alt="Sale" src="https://github.com/user-attachments/assets/5541357f-087c-4709-a891-155e46a036df" />
+
+| **Top Brands by Sales** | Toyota, Honda, and Ford led overall volume. | 
 | **Condition vs Price** | Cars in ‘Excellent’ condition sold for ~22% higher prices. |
 | **Odometer vs Price** | Clear negative correlation — price drops after 100K km. |
 | **Monthly Sales Trend** | Peak sales between March–June; dip during monsoon months. |
 | **Transmission Mix** | 70% of cars sold had automatic transmission. |
-
-**Dashboard Screenshots**
-
-Average.png
-![Condition vs Price](dashboards/julius_condition_vs_price.png)
-![Sales Trend](dashboards/julius_sales_trend.png)
-![Transmission Mix](dashboards/julius_transmission_mix.png)
 
 ---
 
