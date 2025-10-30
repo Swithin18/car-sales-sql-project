@@ -40,14 +40,13 @@ To analyze used car sales data and uncover key insights about pricing, brand per
 The dashboard visuals were generated using **Julius AI**, an AI-powered analytics tool that automates data visualization and pattern detection.
 
 **Key Visuals**
-| Insight | Description |
-|----------|--------------|<img width="2000" height="1200" alt="Sale" src="https://github.com/user-attachments/assets/5541357f-087c-4709-a891-155e46a036df" />
 
 | **Top Brands by Sales** | Toyota, Honda, and Ford led overall volume. | 
 | **Condition vs Price** | Cars in ‘Excellent’ condition sold for ~22% higher prices. |
 | **Odometer vs Price** | Clear negative correlation — price drops after 100K km. |
 | **Monthly Sales Trend** | Peak sales between March–June; dip during monsoon months. |
 | **Transmission Mix** | 70% of cars sold had automatic transmission. |
+
 
 ---
 
