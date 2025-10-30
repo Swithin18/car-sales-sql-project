@@ -18,4 +18,9 @@ insert_data.sql: Includes SQL commands to insert sample car sales data into the 
 queries.sql: Comprises advanced SQL queries for data analysis and insights.
 Technologies Used:
 
+
 #SQL (PostgreSQL)
+POWER BI_DASHBOARD.PNG(screenshot)
+EXCEL_DAshboard.png
+insights/
+Buisnes finding
