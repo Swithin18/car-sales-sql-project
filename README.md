@@ -50,7 +50,7 @@ The dashboard visuals were generated using **Julius AI**, an AI-powered analytic
 
 **Dashboard Screenshots**
 
-![Brand Sales](dashboards/julius_brand_sales.png)
+![Brand Sales](Car sales/Julius AI/Average.png)
 ![Condition vs Price](dashboards/julius_condition_vs_price.png)
 ![Sales Trend](dashboards/julius_sales_trend.png)
 ![Transmission Mix](dashboards/julius_transmission_mix.png)
