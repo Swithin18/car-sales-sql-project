@@ -1,70 +1,83 @@
-# Car Sales Data Analysis Project
+# 🚗 Car Sales Data Analysis Project
 
-**Tools Used:** PostgreSQL, SQL, Excel (or Power BI)  
-**Duration:** [June 2025]  
-**Repository Link:** https://github.com/Swithin18/car-sales-sql-project
-
----
-
-## 🧭 Project Objective  
-The aim of this project is to design, implement and analyse a relational database for car sales data, and to extract actionable business insights. Through cleaning, structuring and querying the dataset, the goal is to uncover key trends in pricing, vehicle conditions, sales volume and regional behaviour — enabling data-driven decision-making for stakeholders.
+**Tools Used:** SQL, Excel, Julius AI  
+**Duration:** October 2025  
+**Repository:** https://github.com/Swithin18/car-sales-sql-project
 
 ---
 
-## 📂 Dataset  
-- Contains over 10,000 car sales records with attributes such as: year, make, model, trim, body, transmission, VIN, state, condition, odometer, colour, interior, seller, MMR (market-median retail), selling price, and sale date.  
-- Source: Kaggle dataset
-- Columns used: `year`, `make`, `model`, `body`, `transmission`, `condition`, `odometer`, `selling_price`, `sale_date`, etc.
+## 🎯 Objective
+To analyze used car sales data and uncover key insights about pricing, brand performance, and sales trends using SQL and Julius AI dashboards.
 
 ---
 
-## 🧼 Data Cleaning & Preparation (SQL)  
-- Removed or imputed missing values for critical fields like `selling_price`, `odometer`, `sale_date`.  
-- Standardized categorical fields (make, model, transmission, condition) for consistency.  
-- Converted date and numeric formats appropriately (e.g., `sale_date` as DATE, `odometer` as INTEGER).  
-- Created derived fields for analysis (e.g., vehicle age = current_year – year_of_manufacture).  
-- Ensured referential integrity if using normalization (e.g., separate tables for makes, models, states).
+## 🧩 Dataset
+- 10,000+ car sales records  
+- Columns include: `year`, `make`, `model`, `trim`, `body`, `transmission`, `state`, `condition`, `odometer`, `color`, `interior`, `seller`, `mmr`, `sellingprice`, `saledate`.  
+- Source: Public automotive sales dataset (cleaned for analysis).
 
 ---
 
-## 📊 Exploratory & Analytical Queries  
-Using SQL, performed analysis such as:  
-- Top selling car makes and models by state.  
-- Average selling price by vehicle condition, age and odometer reading.  
-- Distribution of transmissions (automatic vs manual) and their impact on selling price.  
-- Time series analysis: monthly and yearly sales volume trends.  
-- Correlation between odometer reading and selling price, and other key drivers of price.  
+## 🧼 Data Cleaning (SQL)
+- Replaced missing categorical values (`make`, `model`, `transmission`, `color`, `interior`) with `'Unknown'`.  
+- Dropped rows with missing critical numeric values like `sellingprice`, `odometer`, and `saledate`.  
+- Formatted columns for consistency (e.g., `saledate` → DATE, `sellingprice` → NUMERIC).  
+- Ensured relational integrity and checked for duplicates.
 
 ---
 
-## 📈 Dashboard & Visual Insights  
-The dashboards folder contains visualizations built in Excel (or Power BI) that highlight:  
-- Sales volume and revenue by brand & region.  
-- Trend line of average selling prices over time.  
-- Condition and transmission mix breakdowns.  
-- KPI cards: total cars sold, average price, median odometer, etc.  
-
-(images and screenshots available in `dashboards/` folder)
+## 📊 SQL Analysis
+- Top-selling car brands and models by state.  
+- Average selling price segmented by car condition and model year.  
+- Correlation between odometer reading and selling price.  
+- Sales trend over time (monthly/seasonal).  
+- Transmission type distribution (Automatic vs Manual).
 
 ---
 
-## 💡 Key Business Findings  
-- **Finding #1:** Vehicles from trusted brands (e.g., Toyota, Honda) consistently show higher selling prices despite higher odometer readings.  
-- **Finding #2:** Automatic transmissions sold ~25% faster than manual sticks, suggesting resale preference.  
-- **Finding #3:** Condition of the vehicle (Good/Excellent vs Fair/Poor) has a stronger impact on price than age or mileage alone.  
-- **Finding #4:** Monthly sales peak around [March-June], indicating a seasonality effect — useful for inventory planning and promotions.  
-- **Finding #5:** Vehicles with odometer >100,000 km show steep resale drop, suggesting threshold behaviour.
+## 📈 Julius AI Dashboard Insights
+
+The dashboard visuals were generated using **Julius AI**, an AI-powered analytics tool that automates data visualization and pattern detection.
+
+**Key Visuals**
+| Insight | Description |
+|----------|--------------|
+| **Top Brands by Sales** | Toyota, Honda, and Ford led overall volume. |
+| **Condition vs Price** | Cars in ‘Excellent’ condition sold for ~22% higher prices. |
+| **Odometer vs Price** | Clear negative correlation — price drops after 100K km. |
+| **Monthly Sales Trend** | Peak sales between March–June; dip during monsoon months. |
+| **Transmission Mix** | 70% of cars sold had automatic transmission. |
+
+**Dashboard Screenshots**
+
+![Brand Sales](dashboards/julius_brand_sales.png)
+![Condition vs Price](dashboards/julius_condition_vs_price.png)
+![Sales Trend](dashboards/julius_sales_trend.png)
+![Transmission Mix](dashboards/julius_transmission_mix.png)
 
 ---
 
-## 🔧 Skills & Tools Covered  
-- Relational database schema design & implementation  
-- Data cleaning and transformation in SQL  
-- Complex query writing, aggregation and grouping  
-- Trend, distribution and correlation analyses  
-- Data visualization in Excel / Power BI  
-- Business insight generation & presentation  
+## 💡 Business Insights
+- Focus on vehicles in “Good” or “Excellent” condition to maximize profit margins.  
+- Prioritize automatic models for resale; higher turnover and customer preference.  
+- Optimize marketing in high-demand months (March–June).  
+- Consider dynamic pricing for high-odometer cars to move slower inventory faster.
+
+---
+
+## 🧠 Skills Demonstrated
+- Data cleaning & analysis (SQL)  
+- AI-based visualization & interpretation (Julius AI)  
+- Business problem-solving  
+- Insight presentation & storytelling  
+
+---
+
+## 📎 Future Improvements
+- Build Power BI dashboard for deeper interactivity.  
+- Add a machine learning model to predict selling prices.  
+- Automate sales reports using Python or SQL scheduling.
+
+---
 
 
-
-## 📚 Repository Structure  
