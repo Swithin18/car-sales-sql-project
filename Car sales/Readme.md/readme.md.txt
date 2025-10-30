@@ -8,10 +8,11 @@ car-sales-sql-project/
 │   └── create_tables.sql
 │   └── data_cleaning.sql
 │   └── analysis_queries.sql
-├── dashboards/
-│   ├── excel_sales_dashboard.png
-│   ├── powerbi_sales_dashboard.png
-│   └── (optional) dashboard_report.pdf
-└── insights/
-    └── business_findings.md      ← key insights + recommendations
+dashboards/
+├── julius_brand_sales.png
+├── julius_condition_vs_price.png
+├── julius_sales_trend.png
+└── julius_transmission_mix.png
+
+
 
