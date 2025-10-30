@@ -48,6 +48,7 @@ The dashboard visuals were generated using **Julius AI**, an AI-powered analytic
 | **Transmission Mix** | 70% of cars sold had automatic transmission. |
 
 
+
 ---
 
 ## 💡 Business Insights
